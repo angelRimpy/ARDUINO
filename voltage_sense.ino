@@ -29,5 +29,15 @@ void loop() {
    input_voltage = extra /(r2/(r2+r1));
    Serial.print("input_voltage:- ");
    Serial.println(input_voltage);
+   if(input_voltage==12)
+   {
+     digitalWrite(LED2, HIGH);
+    
+   }
+   else
+   {
+        digitalWrite(LED2, LOW);
+   }
+   
  
 }
